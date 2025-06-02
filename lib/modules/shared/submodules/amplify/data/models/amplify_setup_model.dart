@@ -11,7 +11,7 @@ class AmplifySetupModel extends AmplifySetupEntity {
   });
 
   factory AmplifySetupModel.start() => AmplifySetupModel(
-        identityPoolId: AppConfig.cognitoIdentityPoolId,
+        identityPoolId: '', // Não necessário para autenticação básica
         poolId: AppConfig.cognitoPoolId,
         appClientId: AppConfig.cognitoClientId,
         region: AppConfig.cognitoRegion,
