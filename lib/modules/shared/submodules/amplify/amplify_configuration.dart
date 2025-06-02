@@ -37,18 +37,24 @@ abstract class AmplifyConfiguration {
                   "SignInRedirectURI": "myapp://",
                   "SignOutRedirectURI": "myapp://",
                   "Scopes": [
+                    "phone",
                     "email",
                     "openid",
                     "profile",
                     "aws.cognito.signin.user.admin"
                   ]
                 },
-                "authenticationFlowType": "USER_SRP_AUTH",
-                "socialProviders": [
-                  "FACEBOOK",
-                  "GOOGLE",
-                  "APPLE"
-                ]
+                "authenticationFlowType": "USER_PASSWORD_AUTH",
+                "socialProviders": [],
+                "usernameAttributes": ["email"],
+                "signupAttributes": ["email"],
+                "passwordProtectionSettings": {
+                  "passwordPolicyMinLength": 8,
+                  "passwordPolicyCharacters": []
+                },
+                "mfaConfiguration": "OFF",
+                "mfaTypes": ["SMS"],
+                "verificationMechanisms": ["EMAIL"]
               }
             }
           }
@@ -57,3 +63,4 @@ abstract class AmplifyConfiguration {
     }''';
   }
 }
+
