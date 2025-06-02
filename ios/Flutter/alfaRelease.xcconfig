@@ -1,0 +1,7 @@
+#include "Pods/Target Support Files/Pods-Runner/Pods-Runner.release-alfa.xcconfig"
+#include "Generated.xcconfig"
+
+FLUTTER_TARGET=lib/main_alfa.dart
+ASSET_PREFIX=alfa
+BUNDLE_NAME=starterkit ALFA
+BUNDLE_DISPLAY_NAME=starterkit ALFA

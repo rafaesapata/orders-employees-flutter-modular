@@ -1,0 +1,126 @@
+{
+  "project_info": {
+    "project_number": "861679707916",
+    "project_id": "starterkit-9abb5",
+    "storage_bucket": "starterkit-9abb5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:861679707916:android:5bf3e1e7dcf98edcb88b29",
+        "android_client_info": {
+          "package_name": "com.capptan.starterkit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "861679707916-8s2d8r4vfnabt56qc7imhfq0pcvfj7f1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSvplmHx-HBLc5r_3z_1s3yyTdSZjJz4g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "861679707916-8s2d8r4vfnabt56qc7imhfq0pcvfj7f1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:861679707916:android:219512a636b18e72b88b29",
+        "android_client_info": {
+          "package_name": "com.capptan.starterkit.alfa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "861679707916-8s2d8r4vfnabt56qc7imhfq0pcvfj7f1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSvplmHx-HBLc5r_3z_1s3yyTdSZjJz4g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "861679707916-8s2d8r4vfnabt56qc7imhfq0pcvfj7f1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:861679707916:android:296f8172d67f67dab88b29",
+        "android_client_info": {
+          "package_name": "com.capptan.starterkit.beta"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "861679707916-8s2d8r4vfnabt56qc7imhfq0pcvfj7f1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSvplmHx-HBLc5r_3z_1s3yyTdSZjJz4g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "861679707916-8s2d8r4vfnabt56qc7imhfq0pcvfj7f1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:861679707916:android:bc1943109ddf495db88b29",
+        "android_client_info": {
+          "package_name": "com.capptan.starterkit.dev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "861679707916-8s2d8r4vfnabt56qc7imhfq0pcvfj7f1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSvplmHx-HBLc5r_3z_1s3yyTdSZjJz4g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "861679707916-8s2d8r4vfnabt56qc7imhfq0pcvfj7f1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,18 @@
+slidy: '1'
+scripts:
+  test_setup:
+    description: 'Generate tests metadata'
+    steps: 
+      - name: 'Setup of tests'
+        run: dart run build_runner build
+  test_run:
+    description: 'Run all tests'
+    steps: 
+      - name: 'Run tests'
+        run: flutter test --coverage
+      - name: 'Parse lcov data'
+        run: lcov --remove coverage/lcov.info 'lib/app/*' 'lib/core/*' -o coverage/new_lcov.info
+      - name: 'Export coverage data to html'
+        run: genhtml coverage/new_lcov.info -o coverage/html
+      - name: 'Open coverage data'
+        run: open coverage/html/index.html

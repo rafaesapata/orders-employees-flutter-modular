@@ -1,0 +1,38 @@
+flavorizr:
+  flavors:
+    dev:
+      app:
+        name: "STARTERKIT DEV"
+      android:
+        generateDummyAssets: false
+        applicationId: "com.capptan.starterkit.dev"
+      ios:
+        generateDummyAssets: false
+        bundleId: "com.capptan.starterkit.dev"
+    alfa:
+      app:
+        name: "STARTERKIT ALFA"
+      android:
+        applicationId: "com.capptan.starterkit.alfa"
+        generateDummyAssets: false
+      ios:
+        bundleId: "com.capptan.starterkit.alfa"
+        generateDummyAssets: false
+    beta:
+      app:
+        name: "STARTERKIT BETA"
+      android:
+        applicationId: "com.capptan.starterkit.beta"
+        generateDummyAssets: false
+      ios:
+        bundleId: "com.capptan.starterkit.beta"
+        generateDummyAssets: false
+    prod:
+      app:
+        name: "STARTERKIT"
+      android:
+        applicationId: "com.capptan.starterkit"
+        generateDummyAssets: false
+      ios:
+        bundleId: "com.capptan.starterkit"
+        generateDummyAssets: false
