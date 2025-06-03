@@ -63,6 +63,7 @@ dev_dependencies:
     sdk: flutter
   mockito: ^5.4.4
   build_runner: ^2.4.13
+  dart_define: ^2.1.1
 
 flutter:
   generate: true
