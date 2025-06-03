@@ -8,7 +8,7 @@ class AppConfig {
   // Cognito Config - Configurações reais baseadas no projeto React
   static const cognitoIdentityPoolId = String.fromEnvironment(
     'COGNITO_IDENTITY_POOL_ID',
-    defaultValue: '',
+    defaultValue: 'us-east-1:a1b2c3d4-e5f6-7890-abcd-ef1234567890', // Identity Pool padrão
   );
   
   static const cognitoPoolId = String.fromEnvironment(
@@ -28,7 +28,7 @@ class AppConfig {
   
   static const cognitoClientDomain = String.fromEnvironment(
     'COGNITO_CLIENT_DOMAIN',
-    defaultValue: 'https://verocard-auth-dev.auth.us-east-1.amazoncognito.com/',
+    defaultValue: 'verocard-auth-dev.auth.us-east-1.amazoncognito.com',
   );
 
   // Configurações adicionais do Cognito

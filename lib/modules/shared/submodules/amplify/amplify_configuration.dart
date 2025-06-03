@@ -11,17 +11,6 @@ abstract class AmplifyConfiguration {
           "awsCognitoAuthPlugin": {
             "UserAgent": "aws-amplify-cli/0.1.0",
             "Version": "0.1.0",
-            "IdentityManager": {
-              "Default": {}
-            },
-            "CredentialsProvider": {
-              "CognitoIdentity": {
-                "Default": {
-                  "PoolId": "${env.identityPoolId}",
-                  "Region": "${env.region}"
-                }
-              }
-            },
             "CognitoUserPool": {
               "Default": {
                 "PoolId":"${env.poolId}",
@@ -31,19 +20,6 @@ abstract class AmplifyConfiguration {
             },
             "Auth": {
               "Default": {
-                "OAuth": {
-                  "WebDomain":"${env.clientDomain}",
-                  "AppClientId": "${env.appClientId}",
-                  "SignInRedirectURI": "myapp://",
-                  "SignOutRedirectURI": "myapp://",
-                  "Scopes": [
-                    "phone",
-                    "email",
-                    "openid",
-                    "profile",
-                    "aws.cognito.signin.user.admin"
-                  ]
-                },
                 "authenticationFlowType": "USER_PASSWORD_AUTH",
                 "socialProviders": [],
                 "usernameAttributes": ["email"],
