@@ -1,6 +1,5 @@
 import 'package:flutter_modular/flutter_modular.dart';
 
-import '../../app/app_module.dart';
 import '../shared/domain/bases/shared_base_module.dart';
 import '../shared/submodules/rest/rest_module.dart';
 import 'data/datasources/employees_datasource.dart';
@@ -43,8 +42,7 @@ class EmployeesModule extends SharedBaseModule {
       EmployeesRoutes.employeesList,
       child: (_) => const EmployeesListPage(),
     );
-    
+
     super.routes(r);
   }
 }
-

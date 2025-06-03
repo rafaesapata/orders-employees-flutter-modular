@@ -1,4 +1,3 @@
-import 'package:dartz/dartz.dart';
 import 'package:result_dart/result_dart.dart';
 
 import '../entities/order_entity.dart';
@@ -26,4 +25,3 @@ abstract class OrdersRepository {
 
   Future<Result<Map<String, dynamic>, Exception>> getOrdersStats();
 }
-

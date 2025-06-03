@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:result_dart/result_dart.dart';
 
 import '../../domain/entities/employee_entity.dart';
-import '../../domain/usecases/get_employees_usecase.dart';
 import '../../domain/usecases/create_employee_usecase.dart';
+import '../../domain/usecases/get_employees_usecase.dart';
 
 enum EmployeesPageState { loading, ready, error, success, empty }
 
@@ -77,8 +76,8 @@ class EmployeesControllerImp extends EmployeesController {
     result.fold(
       (success) {
         employees.value = success;
-        state.value = success.isEmpty 
-            ? EmployeesPageState.empty 
+        state.value = success.isEmpty
+            ? EmployeesPageState.empty
             : EmployeesPageState.ready;
       },
       (error) {
@@ -141,11 +140,10 @@ class EmployeesControllerImp extends EmployeesController {
   void clearError() {
     errorMessage.value = null;
     if (state.value == EmployeesPageState.error) {
-      state.value = employees.value.isEmpty 
-          ? EmployeesPageState.empty 
+      state.value = employees.value.isEmpty
+          ? EmployeesPageState.empty
           : EmployeesPageState.ready;
     }
     notifyListeners();
   }
 }
-

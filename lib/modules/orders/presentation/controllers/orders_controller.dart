@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:result_dart/result_dart.dart';
 
 import '../../domain/entities/order_entity.dart';
-import '../../domain/usecases/get_orders_usecase.dart';
 import '../../domain/usecases/create_order_usecase.dart';
+import '../../domain/usecases/get_orders_usecase.dart';
 
 enum OrdersPageState { loading, ready, error, success, empty }
 
@@ -71,9 +70,8 @@ class OrdersControllerImp extends OrdersController {
     result.fold(
       (success) {
         orders.value = success;
-        state.value = success.isEmpty 
-            ? OrdersPageState.empty 
-            : OrdersPageState.ready;
+        state.value =
+            success.isEmpty ? OrdersPageState.empty : OrdersPageState.ready;
       },
       (error) {
         errorMessage.value = error.toString();
@@ -129,11 +127,9 @@ class OrdersControllerImp extends OrdersController {
   void clearError() {
     errorMessage.value = null;
     if (state.value == OrdersPageState.error) {
-      state.value = orders.value.isEmpty 
-          ? OrdersPageState.empty 
-          : OrdersPageState.ready;
+      state.value =
+          orders.value.isEmpty ? OrdersPageState.empty : OrdersPageState.ready;
     }
     notifyListeners();
   }
 }
-

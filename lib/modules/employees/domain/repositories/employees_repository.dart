@@ -1,4 +1,3 @@
-import 'package:dartz/dartz.dart';
 import 'package:result_dart/result_dart.dart';
 
 import '../entities/employee_entity.dart';
@@ -14,9 +13,11 @@ abstract class EmployeesRepository {
 
   Future<Result<EmployeeEntity, Exception>> getEmployeeById(String id);
 
-  Future<Result<EmployeeEntity, Exception>> createEmployee(EmployeeEntity employee);
+  Future<Result<EmployeeEntity, Exception>> createEmployee(
+      EmployeeEntity employee);
 
-  Future<Result<EmployeeEntity, Exception>> updateEmployee(EmployeeEntity employee);
+  Future<Result<EmployeeEntity, Exception>> updateEmployee(
+      EmployeeEntity employee);
 
   Future<Result<bool, Exception>> deleteEmployee(String id);
 
@@ -33,4 +34,3 @@ abstract class EmployeesRepository {
 
   Future<Result<Map<String, dynamic>, Exception>> getEmployeesStats();
 }
-
